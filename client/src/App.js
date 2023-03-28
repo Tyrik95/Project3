@@ -1,12 +1,16 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom'
-import Main from './views/Main';
+import Landing from './views/Landing';
+import MarqueeHeader from './components/MarqueeHeader';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
+      <MarqueeHeader/>
+      <Navbar/>
       <Routes>
-        <Route path='/' element={<Main/>}/>
+          <Route path='/' element={<Landing/>}/>
       </Routes>
     </div>
   );
