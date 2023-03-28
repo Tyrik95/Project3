@@ -6,7 +6,8 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App"> 
+    <div> hi </div>
       <MarqueeHeader/>
       <Navbar/>
       <Routes>
