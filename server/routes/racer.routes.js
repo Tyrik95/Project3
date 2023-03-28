@@ -1,4 +1,4 @@
-const RacerController = require('../controllers/bet.controller');
+const RacerController = require('../controllers/racer.controller');
 
 module.exports = app => {
     app.get('/api/racers', RacerController.findAllRacers);

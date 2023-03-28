@@ -1,4 +1,4 @@
-const Match = require('../models/matchr.model');
+const Match = require('../models/match.model');
 
 module.exports.findAllMatches = (req, res) => {
     Match.find()

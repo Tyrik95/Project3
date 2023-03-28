@@ -1,4 +1,4 @@
-const TeamController = require('../controllers/bet.controller');
+const TeamController = require('../controllers/team.controller');
 
 module.exports = app => {
     app.get('/api/teams', TeamController.findAllTeams);
