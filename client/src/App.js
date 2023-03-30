@@ -6,13 +6,20 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="App"> 
-    <div> hi </div>
-      <MarqueeHeader/>
-      <Navbar/>
-      <Routes>
-          <Route path='/' element={<Landing/>}/>
-      </Routes>
+    <div>
+      <div className='header'>
+        <MarqueeHeader/>
+      </div>
+      <div className='app'>
+        <div className='main'>
+          <Navbar/>
+          <div className='mainContent'>
+            <Routes>
+                <Route path='/' element={<Landing/>}/>
+            </Routes>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
