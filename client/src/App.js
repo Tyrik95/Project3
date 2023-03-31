@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Landing from './views/Landing';
 import MarqueeHeader from './components/MarqueeHeader';
 import Navbar from './components/Navbar';
+import Watch from './views/Watch';
 
 function App() {
   return (
@@ -15,7 +16,10 @@ function App() {
           <Navbar/>
           <div className='mainContent'>
             <Routes>
-                <Route path='/' element={<Landing/>}/>
+                {/* <Route path='/' element={<Landing/>}/> */}
+                <Route path='/' element={<Watch/>}/>
+                {/* <Route path='/team' element={<Team/>}/> */}
+                {/* <Route path='/league' element={<League/>}/> */}
             </Routes>
           </div>
         </div>

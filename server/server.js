@@ -4,6 +4,7 @@ const cors = require('cors')
 const app = express();
 require('dotenv').config();
 const port = process.env.PORT;
+const { simulateRace, race } = require('./simulation')
 
 require("./config/mongoose.config");
 
@@ -20,4 +21,9 @@ AllMatchRoutes(app);
 AllTeamRoutes(app);
 AllBetRoutes(app);
 
-app.listen(port, () => console.log(`Listening on port: ${port}`) );
+app.get('/api/race', (req, res) => {
+    const raceData = race();
+    res.json(raceData);
+});
+
+app.listen(port, () => console.log(`Listening on port: ${port}`));
